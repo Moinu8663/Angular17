@@ -1,0 +1,28 @@
+<div class="container text-center sticky-lg-top">
+    <div class="row">
+      <div class="col image">
+        1 of 2
+      </div>
+      <div class="col form ">
+        <div class="text-center px-5 ">
+          <h1 class="mt-5 text-success ">Update Profile</h1>
+          <div class="my-5 text-center px-5">
+            <form [formGroup]="update" (ngSubmit)="Onupdate()">
+                  
+              <mat-form-field class="example-full-width">
+                <mat-label>Bio</mat-label>
+                <textarea matInput placeholder="Enter Your Bio" formControlName="Bio"></textarea>
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Enter Your Address" formControlName="Address"></textarea>
+              </mat-form-field>
+  
+              <button class=" px-5 btn btn-success" type="submit" [disabled]="update.invalid">update</button>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

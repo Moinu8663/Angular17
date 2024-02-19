@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="Details" *ngIf="users">
+        <div class="py-4">
+            <mat-grid-list cols="2" rowHeight="2:1" >
+                <mat-grid-tile>
+                    <mat-list role="list" class="text-success">
+                        <mat-list-item role="listitem"><h1>First_name:{{users.first_name}} </h1></mat-list-item>
+                        <mat-list-item role="listitem"><h1>Last_name: {{users.last_name}} </h1></mat-list-item>
+                      </mat-list>
+                </mat-grid-tile>
+                <mat-grid-tile>2</mat-grid-tile>
+            </mat-grid-list>
+        </div>
+        <div>
+            <mat-grid-list cols="1" rowHeight="2:1">
+                <mat-grid-tile>
+                    <mat-list role="list" class="text-success">
+                        <mat-list-item role="listitem"><h1>Mobile_No: {{users.mobile_No}}</h1></mat-list-item>
+                        <mat-list-item role="listitem"><h1>Email: {{users.email}} </h1></mat-list-item>
+                        <mat-list-item role="listitem"><h1>Address: {{users.address}} </h1></mat-list-item>
+                        <mat-list-item role="listitem"><h1>Bio: {{users.bio}} </h1></mat-list-item>
+                      </mat-list>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>

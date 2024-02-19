@@ -1,0 +1,35 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer mode="side" #drawer class="example-sidenav " class="px-5">
+        <h1 class="text-success mt-4">User Dashboard</h1>
+        <ul>
+            <li>
+                <button mat-button color="primary" routerLink="/profile">Profile</button>
+            </li>
+            <li>
+              <button mat-button color="primary" routerLink="/updateprofile">Update Profile</button>
+          </li>
+          <li>
+            <button mat-button color="primary" routerLink="/post">Post</button>
+        </li>
+            <div *ngIf="isLoggedInUser">
+              <li>
+                <button mat-button color="primary" routerLink="/login">Login</button>
+            </li>
+            </div>
+            <div *ngIf="!isLoggedInUser">
+              <li>
+                <button mat-button color="warn" (click)="logout()">Logout</button>
+              </li>
+            </div>
+        </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

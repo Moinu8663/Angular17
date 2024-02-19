@@ -1,0 +1,40 @@
+<div class="container text-center sticky-lg-top">
+    <div class="row">
+      <div class="col image">
+        1 of 2
+      </div>
+      <div class="col form ">
+        <div class="text-center px-5 ">
+          <h1 class="mt-5 text-success ">Contect Us</h1>
+          <div class="my-5 text-center px-5">
+            <form [formGroup]="contect" (ngSubmit)="Onsubmit()">
+
+                <mat-form-field class=" px-5">
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" placeholder="Enter Your Name" formControlName="Name">
+                  </mat-form-field>
+      
+                  <mat-form-field class=" px-5">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" placeholder="Email" formControlName="Email">
+                  </mat-form-field>
+      
+                  <mat-form-field class=" px-5">
+                    <mat-label>Mobile_no</mat-label>
+                    <input matInput type="tel" placeholder="Mobile_No" formControlName="Mobile_No">
+                  </mat-form-field>
+                  
+              <mat-form-field class="example-full-width">
+                <mat-label>Message</mat-label>
+                <textarea matInput placeholder="Enter Your massage" formControlName="Message"></textarea>
+              </mat-form-field>
+
+  
+              <button class=" px-5 btn btn-success" type="submit" [disabled]="!contect.valid">Submit</button>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

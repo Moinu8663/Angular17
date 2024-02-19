@@ -1,0 +1,50 @@
+<div class="container text-center sticky-lg-top">
+  <div class="row">
+    <div class="col image">
+      1 of 2
+    </div>
+    <div class="col form ">
+      <div class="text-center px-5 ">
+        <h1 class="mt-5 text-success ">Sign Up</h1>
+        <div class="my-5 text-center px-5">
+          <form [formGroup]="signup" (ngSubmit)="onSubmit()">
+            <mat-form-field class=" px-5">
+              <mat-label>First_name</mat-label>
+              <input matInput type="text" placeholder="First_name" formControlName="First_name">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Last_name</mat-label>
+              <input matInput type="text" placeholder="Last_name" formControlName="Last_name">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Email</mat-label>
+              <input matInput type="email" placeholder="Email" formControlName="Email">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Mobile_no</mat-label>
+              <input matInput type="tel" placeholder="Mobile_No" formControlName="Mobile_No">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" placeholder="Password" formControlName="Password">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Confirm Password</mat-label>
+              <input matInput type="password" placeholder="Con_password" formControlName="Con_password">
+            </mat-form-field>
+
+            <!-- <div *ngIf="registrationError" class="error-message">{{ registrationError }}</div> -->
+
+            <button class="btn btn-success" type="submit" [disabled]="signup.invalid">Register</button>
+          </form>
+          <p>Already have an account?<button mat-button color="primary"  routerLink="/login">login</button></p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

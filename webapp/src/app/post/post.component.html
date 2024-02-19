@@ -1,0 +1,52 @@
+<div class="">
+    <form [formGroup]="post" (ngSubmit)="OnPost()">
+                  
+        <mat-form-field class="example-full-width">
+          <mat-label>Post</mat-label>
+          <textarea matInput placeholder="Enter Your Post" formControlName="Post"></textarea>
+        </mat-form-field>
+        <button class="btn btn-success" type="submit" [disabled]="post.invalid">Upload</button>
+      </form>
+</div> 
+<mat-grid-list cols="1" rowHeight="2:1">
+    <mat-grid-tile>
+        <div>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div *ngIf="users">
+                    <mat-card-title>
+                        First_name:{{users.first_name}}
+                    </mat-card-title>
+                  </div>
+                  <mat-divider></mat-divider>
+                </mat-card-header>
+                <mat-card-content>
+                  <div *ngIf="postuser">
+                    <p>Post:{{postuser.Post}}</p>
+                  </div>
+                  <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button mat-button>
+                    <mat-icon>share</mat-icon>
+                    </button>
+                    <button mat-button>
+                        <mat-icon>delete</mat-icon>
+                        </button>
+                        <button mat-button>
+                            <mat-icon>edit</mat-icon>
+                            </button>
+                </mat-card-actions>
+                <mat-card-footer>
+                  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                </mat-card-footer>
+              </mat-card>  
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+ 
+
+

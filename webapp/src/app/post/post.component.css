@@ -1,0 +1,13 @@
+.example-card {
+    width: 90%;
+  }
+  .example-full-width {
+    width: 85%;
+    margin-left: 2%;
+    padding-right: 2%;
+  }
+
+  mat-grid-tile {
+    background: rgb(248, 253, 255);
+  }
+
