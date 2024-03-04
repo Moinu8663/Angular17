@@ -2487,11 +2487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Moinuddin\\Project\\Project_app_services\\Post\\Post.csproj",
+      "projectUniqueName": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj",
       "projectName": "Post",
-      "projectPath": "D:\\Moinuddin\\Project\\Project_app_services\\Post\\Post.csproj",
+      "projectPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj",
       "packagesPath": "C:\\Users\\moinuddinali\\.nuget\\packages\\",
-      "outputPath": "D:\\Moinuddin\\Project\\Project_app_services\\Post\\obj\\",
+      "outputPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moinuddinali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2516,7 +2516,9 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "default"
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2556,19 +2558,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.27, 6.0.27]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.27, 6.0.27]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.27, 6.0.27]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.27, 6.0.27]"
           }
         ],
         "frameworkReferences": {
@@ -2579,7 +2581,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

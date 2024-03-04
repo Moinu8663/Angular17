@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GGrs1+TiPhqUIShO/FXid61ovKgVfb3/Yv8J8rZz8MU7Br3gKLW93+kV9Ao5VWcT35nmis44OicNvsux+SW7Jg==",
+  "dgSpecHash": "1+GcqBShMM1pQec1Q82XgcUQLIQee3wTkKIHg/ncpzF2VPnVoUMprZQttlE8FeIh34R8q+11cBCZboeE/Hmf3w==",
   "success": true,
-  "projectFilePath": "D:\\Moinuddin\\Project\\Project_app_services\\ContectUs\\ContectUs.csproj",
+  "projectFilePath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\ContectUs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moinuddinali\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -54,10 +54,10 @@
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
   ],
   "logs": []
 }

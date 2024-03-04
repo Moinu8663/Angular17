@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yJMmXbrjUIGGMgxgKFKHggXgDk8NgVCMiXvoz+S1/cxkiQEo3OG9PqU40qYrn0zpFl/X7QmkhiJLM0oVNy56lg==",
+  "dgSpecHash": "NQrktHvaPU59qk5o9+dRGON7jRYtCRcFetIvRoeeIzj+WZiZJLe74v368CI1aPn1KTFtSrB//1lEooJqPVJkQw==",
   "success": true,
-  "projectFilePath": "D:\\Moinuddin\\Project\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
+  "projectFilePath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moinuddinali\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
@@ -30,10 +30,10 @@
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
   ],
   "logs": []
 }
