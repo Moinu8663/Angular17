@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\ContectUs.csproj": {}
+    "D:\\Api_gateway_architecture\\Project_app_services\\ContectUs\\ContectUs.csproj": {}
   },
   "projects": {
-    "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\ContectUs.csproj": {
+    "D:\\Api_gateway_architecture\\Project_app_services\\ContectUs\\ContectUs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\ContectUs.csproj",
+        "projectUniqueName": "D:\\Api_gateway_architecture\\Project_app_services\\ContectUs\\ContectUs.csproj",
         "projectName": "ContectUs",
-        "projectPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\ContectUs.csproj",
+        "projectPath": "D:\\Api_gateway_architecture\\Project_app_services\\ContectUs\\ContectUs.csproj",
         "packagesPath": "C:\\Users\\moinuddinali\\.nuget\\packages\\",
-        "outputPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\ContectUs\\obj\\",
+        "outputPath": "D:\\Api_gateway_architecture\\Project_app_services\\ContectUs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moinuddinali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -34,16 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -75,24 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -101,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

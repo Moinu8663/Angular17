@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Signup_and_signin.Exception;
 using Signup_and_signin.Model;
 using Signup_and_signin.Repository;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
@@ -87,20 +88,27 @@ namespace Signup_and_signin.Services
     }
     public class TokenGenerator : ITokenGenerator
     {
-        public string GenerateToken(string Mobile_No, string Password)
+        private readonly IConfiguration configuration;
+        public string GenerateToken(User user)
         {
             //1. Create the claims
-            var claims = new[] { new Claim("Mobile_No", Mobile_No) }; //payload
+            var claims = new[] 
+            {
+               new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+               new Claim(ClaimTypes.Role,"Admin"),
+            }; //payload
 
             //2. Create ur secret key, and also the Hashing Algorithm (Signing Credentials)
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Moinuddinshaikhmainproject"));
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var secret = "Moinuddinshaikhmainproject";
+            var key = Encoding.UTF8.GetBytes(secret);
+
+            var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
 
             //3. Create the token
             var token = new JwtSecurityToken(
                 issuer: "authapiMoinuddin",
                 audience: "userapi",
-                claims: claims,
+                claims,
                 signingCredentials: credentials,
                 expires: DateTime.Now.AddMinutes(30)
                 );

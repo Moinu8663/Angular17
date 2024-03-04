@@ -34,7 +34,7 @@ namespace Signup_and_signin.Controllers
             var obj = service.LoginUser(user);
             if (obj != null)
             {
-                return Ok(tokenservice.GenerateToken(obj.Mobile_No,obj.Password));
+                return Ok(tokenservice.GenerateToken(user));
             }
             else
             {

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Signup_and_signin.props" />
+</Project>

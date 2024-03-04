@@ -44,6 +44,9 @@ namespace UserAccount.Migrations
                     b.Property<string>("Last_name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Mobile_No");
 
                     b.ToTable("AccDetails");

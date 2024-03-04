@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Principal;
 using UserAccount.Exceptions;
@@ -9,19 +10,22 @@ namespace UserAccount.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class AccountController : ControllerBase
     {
         private readonly IService service;
         public AccountController(IService service)
         {
+            
             this.service = service;
         }
-
+        [Authorize(Roles ="Admin")]
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(service.GetAccount());
         }
+        [AllowAnonymous]
         [HttpGet("{Mobile_No}")]
         public IActionResult Get(string Mobile_No)
         {
@@ -34,7 +38,7 @@ namespace UserAccount.Controllers
                 return NotFound(ex.Message);
             }
         }
-
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Post([FromBody] AccountDetails accountdetails)
         {
@@ -48,6 +52,7 @@ namespace UserAccount.Controllers
                 return Conflict(ex.Message);
             }
         }
+        [AllowAnonymous]
         [HttpPut("{Mobile_No}")]
         public IActionResult Put(string Mobile_No, AccountDetails accountdetails)
         {
@@ -62,6 +67,7 @@ namespace UserAccount.Controllers
             }
 
         }
+        [AllowAnonymous]
         [HttpDelete("{Mobile_No}")]
         public IActionResult Delete(string Mobile_No)
         {

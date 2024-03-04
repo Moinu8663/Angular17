@@ -13,6 +13,6 @@ namespace Signup_and_signin.Services
     }
     public interface ITokenGenerator
     {
-        string GenerateToken(string Mobile_No,string Password);
+        string GenerateToken(User user);
     }
 }

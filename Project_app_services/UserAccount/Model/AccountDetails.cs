@@ -13,6 +13,7 @@ namespace UserAccount.Model
         public string? DOB {  get; set; }
         public string? Address { get; set;}
         public string? Bio { get; set; }
+        public string? Role { get; set; }
 
     }
 }

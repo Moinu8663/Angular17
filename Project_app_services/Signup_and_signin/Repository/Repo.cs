@@ -43,6 +43,7 @@ namespace Signup_and_signin.Repository
             us.Last_name = user.Last_name;
             us.Password = user.Password;
             us.Con_password = user.Con_password;
+            us.Role = user.Role;
         }
 
         public void DeleteUser(string Mobile_No)

@@ -12,6 +12,7 @@ namespace Signup_and_signin.Model
         public string? Con_password { get; set; }
         public string? First_name { get; set; }
         public string? Last_name { get; set;}
+        public string Role { get; set; }
 
     }
 }
