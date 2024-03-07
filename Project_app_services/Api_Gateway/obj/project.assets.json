@@ -1258,11 +1258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Api_gateway_architecture\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
+      "projectUniqueName": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
       "projectName": "Api_Gateway",
-      "projectPath": "D:\\Api_gateway_architecture\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
+      "projectPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
       "packagesPath": "C:\\Users\\moinuddinali\\.nuget\\packages\\",
-      "outputPath": "D:\\Api_gateway_architecture\\Project_app_services\\Api_Gateway\\obj\\",
+      "outputPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Api_Gateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moinuddinali\\AppData\\Roaming\\NuGet\\NuGet.Config",

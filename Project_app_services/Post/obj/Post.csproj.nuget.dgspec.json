@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Api_gateway_architecture\\Project_app_services\\Post\\Post.csproj": {}
+    "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj": {}
   },
   "projects": {
-    "D:\\Api_gateway_architecture\\Project_app_services\\Post\\Post.csproj": {
+    "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Api_gateway_architecture\\Project_app_services\\Post\\Post.csproj",
+        "projectUniqueName": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj",
         "projectName": "Post",
-        "projectPath": "D:\\Api_gateway_architecture\\Project_app_services\\Post\\Post.csproj",
+        "projectPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\Post.csproj",
         "packagesPath": "C:\\Users\\moinuddinali\\.nuget\\packages\\",
-        "outputPath": "D:\\Api_gateway_architecture\\Project_app_services\\Post\\obj\\",
+        "outputPath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Post\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moinuddinali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.7.14.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.20, )"

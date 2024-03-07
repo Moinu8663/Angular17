@@ -1,7 +1,9 @@
+using Consul;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Signup_and_signin.Config;
 using Signup_and_signin.Model;
 using Signup_and_signin.Repository;
 using Signup_and_signin.Services;
@@ -55,6 +57,30 @@ builder.Services.AddAuthorization(auth =>
         .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
         .RequireAuthenticatedUser().Build());
 });
+
+// Register multiple instances based on configuration
+var consulClient = new ConsulClient();
+var consulConfiguration = builder.Configuration.GetSection("Consul:Instances").Get<List<Service_Config>>();
+
+foreach (var instanceConfig in consulConfiguration)
+{
+    var registration = new AgentServiceRegistration()
+    {
+        ID = instanceConfig.Id,
+        Name = instanceConfig.Name,
+        Address = instanceConfig.Address,
+        Port = instanceConfig.Port,
+        Check = new AgentServiceCheck()
+        {
+            DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
+            Interval = TimeSpan.FromSeconds(15),
+            HTTP = $"https://{instanceConfig.Address}:{instanceConfig.Port}/{instanceConfig.Name}",
+            Timeout = TimeSpan.FromSeconds(15),
+        }
+    };
+    await consulClient.Agent.ServiceDeregister(registration.ID).ConfigureAwait(false);
+    await consulClient.Agent.ServiceRegister(registration).ConfigureAwait(false);
+}
 
 var app = builder.Build();
 

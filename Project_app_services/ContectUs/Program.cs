@@ -1,3 +1,5 @@
+using Consul;
+using ContectUs.Config;
 using ContectUs.Model;
 using ContectUs.Repository;
 using ContectUs.Service;
@@ -22,6 +24,30 @@ builder.Services.AddCors(options => {
               .AllowAnyOrigin());
 
 });
+
+// Register multiple instances based on configuration
+var consulClient = new ConsulClient();
+var consulConfiguration = builder.Configuration.GetSection("Consul:Instances").Get<List<Service_config>>();
+
+foreach (var instanceConfig in consulConfiguration)
+{
+    var registration = new AgentServiceRegistration()
+    {
+        ID = instanceConfig.Id,
+        Name = instanceConfig.Name,
+        Address = instanceConfig.Address,
+        Port = instanceConfig.Port,
+        Check = new AgentServiceCheck()
+        {
+            DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
+            Interval = TimeSpan.FromSeconds(15),
+            HTTP = $"https://{instanceConfig.Address}:{instanceConfig.Port}/{instanceConfig.Name}",
+            Timeout = TimeSpan.FromSeconds(15),
+        }
+    };
+    await consulClient.Agent.ServiceDeregister(registration.ID).ConfigureAwait(false);
+    await consulClient.Agent.ServiceRegister(registration).ConfigureAwait(false);
+}
 
 var app = builder.Build();
 app.UseCors("AllowSpecificOrigin");

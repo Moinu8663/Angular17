@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Consul;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Security.Claims;
 using System.Text;
+using UserAccount.Config;
 using UserAccount.Model;
 using UserAccount.Repository;
 using UserAccount.Services;
@@ -82,6 +84,32 @@ builder.Services.AddCors(options => {
 
 });
 
+// Register multiple instances based on configuration
+var consulClient = new ConsulClient();
+var consulConfiguration = builder.Configuration.GetSection("Consul:Instances").Get<List<Service_Config>>();
+
+foreach (var instanceConfig in consulConfiguration)
+{
+    var registration = new AgentServiceRegistration()
+    {
+        ID = instanceConfig.Id,
+        Name = instanceConfig.Name,
+        Address = instanceConfig.Address,
+        Port = instanceConfig.Port,
+        Tags = new[] { "authorized:true" },
+        Check = new AgentServiceCheck()
+        {
+            DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
+            Interval = TimeSpan.FromSeconds(15),
+            HTTP = $"https://{instanceConfig.Address}:{instanceConfig.Port}/{instanceConfig.Name}",
+            Timeout = TimeSpan.FromSeconds(15),
+        }
+    };
+    await consulClient.Agent.ServiceDeregister(registration.ID).ConfigureAwait(false);
+    await consulClient.Agent.ServiceRegister(registration).ConfigureAwait(false);
+}
+
+
 var app = builder.Build();
 app.UseCors("AllowSpecificOrigin");
 
@@ -91,7 +119,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.Map("/health", async context =>
+{
+    Console.WriteLine("Health check request received.");
+    // Your authorization logic here
+    if (context.Request.Headers["Authorization"] != "Bearer YourToken")
+    {
+        context.Response.StatusCode = 401;
+        await context.Response.WriteAsync("Unauthorized");
+    }
+    else
+    {
+        context.Response.StatusCode = 200;
+        await context.Response.WriteAsync("OK");
+    }
+    Console.WriteLine($"Health check response: {context.Response.StatusCode}");
+});
 app.UseHttpsRedirection();
 
 app.UseRouting();

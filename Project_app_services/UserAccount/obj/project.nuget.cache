@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UT6juj/W+CfnjRL4RRrpnlLLe93lEoPY2ArpaBgJ1IzWA7I5j8OzLbqkydQ9b6oB5sBXtRZTUt8agT9JRn0A3w==",
+  "dgSpecHash": "JB8sBWEw2r0K3AubSzYw4HsvAgkUBOO2fT8olaqdUDbsUA1GN2P1PZpKOKUJ1nnBRA8tvTejKhABehz7tT5YgA==",
   "success": true,
-  "projectFilePath": "D:\\Api_gateway_architecture\\Project_app_services\\UserAccount\\UserAccount.csproj",
+  "projectFilePath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\UserAccount\\UserAccount.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\consul\\1.7.14.3\\consul.1.7.14.3.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.20\\microsoft.entityframeworkcore.6.0.20.nupkg.sha512",
