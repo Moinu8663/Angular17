@@ -22,7 +22,7 @@
                 </mat-card-header>
                 <mat-card-content>
                   <div *ngIf="postuser">
-                    <p>Post:{{postuser.Post}}</p>
+                    <p>Post:{{postuser.post}}</p>
                   </div>
                   <mat-divider></mat-divider>
                 </mat-card-content>
@@ -33,9 +33,11 @@
                   <button mat-button>
                     <mat-icon>share</mat-icon>
                     </button>
-                    <button mat-button>
-                        <mat-icon>delete</mat-icon>
+                    <div (ngOnDelete)="OnDelete()">
+                      <button mat-button >
+                        <mat-icon type="OnDelete">delete</mat-icon>
                         </button>
+                    </div>
                         <button mat-button>
                             <mat-icon>edit</mat-icon>
                             </button>
@@ -44,7 +46,7 @@
                   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
                 </mat-card-footer>
               </mat-card>  
-        </div>
+        </div>   
     </mat-grid-tile>
   </mat-grid-list>
  

@@ -45,11 +45,11 @@ export class AuthService {
      sessionStorage.setItem('token',token);
  }
 
- login(Mobile_No:string,Password:string){
+ login(Mobile_No:string,Password:string,Role:string){
   
      return this.http.post<{idToken:string}>(
          'https://localhost:7252/api/User/Login',
-           {Mobile_No,Password}
+           {Mobile_No,Password,Role}
      ) ;
      
  }

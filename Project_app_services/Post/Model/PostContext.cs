@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace Post.Model
 {
@@ -7,7 +8,6 @@ namespace Post.Model
         public DbSet<UserPost> userpost { get; set; }
         public PostContext(DbContextOptions<PostContext> options) : base(options)
         {
-
         }
     }
 }

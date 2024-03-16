@@ -32,7 +32,8 @@ ngOnInit(): void {
       First_name : ['', [Validators.required]],
       Last_name : ['', [Validators.required]],
       Password : ['', [Validators.required, passwordValidator()]],
-      Con_password :['', [Validators.required, ]]
+      Con_password :['', [Validators.required, ]],
+      Role:['', [Validators.required, ]]
  },{Validators:this.passwordMatchValidator});
  this.auth.canAuthenticate();
 }

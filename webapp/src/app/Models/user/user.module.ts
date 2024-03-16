@@ -16,4 +16,5 @@ export class UserModule {
   Email!: string;
   Password!: string;
   Con_password!: string;
+  Role!:string;
  }

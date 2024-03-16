@@ -23,8 +23,11 @@ namespace ContectUs.Migrations
 
             modelBuilder.Entity("ContectUs.Model.Contect", b =>
                 {
-                    b.Property<string>("Mobile_No")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -34,11 +37,15 @@ namespace ContectUs.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Mobile_No")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Mobile_No");
+                    b.HasKey("Id");
 
                     b.ToTable("contects");
                 });

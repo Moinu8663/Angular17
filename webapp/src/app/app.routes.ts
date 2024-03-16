@@ -8,6 +8,7 @@ import { ContectusComponent } from './contectus/contectus.component';
 import { UpdateProfileComponent } from './update-profile/update-profile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { PostComponent } from './post/post.component';
+import { ContectinfoComponent } from './contectus/contectinfo/contectinfo.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path:'profile',component:ProfileComponent},
     {path:'about',component:AboutComponent},
     {path:'contectus',component:ContectusComponent},
+    {path:'contectinfo',component:ContectinfoComponent},
     {path:'updateprofile',component:UpdateProfileComponent},
     {path:'timeline',component:TimelineComponent},
     {path:'post',component:PostComponent}

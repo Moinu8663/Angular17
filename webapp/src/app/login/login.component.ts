@@ -11,13 +11,23 @@ import { passwordValidator, phoneValidator } from '../registration/registration.
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../Services/auth.service';
 import { MatButtonModule } from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [MatGridListModule,MatFormFieldModule, MatInputModule, MatIconModule,MatButtonModule,FormsModule, ReactiveFormsModule,CommonModule,RouterModule],
+  imports: [MatGridListModule,
+    MatFormFieldModule,
+     MatInputModule,
+      MatIconModule,
+      MatButtonModule,
+      MatSelectModule,
+      FormsModule,
+       ReactiveFormsModule,
+       CommonModule,
+       RouterModule],
   providers:[LoginserviceService,HttpClient,AuthService],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
@@ -32,6 +42,7 @@ export class LoginComponent implements OnInit {
     this.signin = this.formBuilder.group({
       Mobile_No: ['', [Validators.required, phoneValidator()]],
       Password: ['', [Validators.required, passwordValidator()]],
+      Role:['', [Validators.required]]
     });
     this.auth.canAuthenticate();
   }

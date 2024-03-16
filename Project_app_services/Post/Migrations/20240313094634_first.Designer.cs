@@ -11,8 +11,8 @@ using Post.Model;
 namespace Post.Migrations
 {
     [DbContext(typeof(PostContext))]
-    [Migration("20240120124546_First")]
-    partial class First
+    [Migration("20240313094634_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

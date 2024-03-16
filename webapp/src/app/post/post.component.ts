@@ -35,8 +35,8 @@ export class PostComponent implements OnInit {
     });
     this.accdetails.GetAccountDetailsById(String(localStorage.getItem("Mobile_No"))).subscribe(
       (data:any) =>{
-        console.log(data);
         this.users = data;
+        
       }
     );
     this.postservice.GetPostDetailsById(String(localStorage.getItem("Mobile_No"))).subscribe(
@@ -74,7 +74,7 @@ export class PostComponent implements OnInit {
         (response) => {
           console.log( response);
           localStorage.getItem("Mobile_No");
-          alert("Post Upload Successfully");
+          alert("Post Update Successfully");
           this.post.reset();
         }
       );
@@ -87,7 +87,7 @@ export class PostComponent implements OnInit {
         (response) => {
           console.log( response);
           localStorage.getItem("Mobile_No");
-          alert("Post Upload Successfully");
+          alert("Post delete Successfully");
           this.post.reset();
         }
       );

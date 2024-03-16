@@ -12,4 +12,5 @@ import { CommonModule } from '@angular/common';
 export class LoginModelModule { 
   Mobile_No:string | undefined;
   Password:string | undefined;
+  Role:string|undefined;
 }

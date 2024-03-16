@@ -5,7 +5,7 @@
     </div>
     <div class="col form ">
       <div class="text-center px-5 ">
-        <h1 class="mt-5 text-success ">Sign Up</h1>
+        <h1 class="mt-5 text-primary-emphasis fs-1">Sign Up</h1>
         <div class="my-5 text-center px-5">
           <form [formGroup]="signup" (ngSubmit)="onSubmit()">
             <mat-form-field class=" px-5">
@@ -36,6 +36,11 @@
             <mat-form-field class=" px-5">
               <mat-label>Confirm Password</mat-label>
               <input matInput type="password" placeholder="Con_password" formControlName="Con_password">
+            </mat-form-field>
+
+            <mat-form-field class=" px-5">
+              <mat-label>Role</mat-label>
+              <input matInput type="Text" placeholder="Role" formControlName="Role">
             </mat-form-field>
 
             <!-- <div *ngIf="registrationError" class="error-message">{{ registrationError }}</div> -->

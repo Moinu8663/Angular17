@@ -5,7 +5,7 @@
         </div>
         <div class="col form ">
             <div class="text-center px-5 ">
-                <h1 class="mt-5 text-success">Sign In</h1>
+                <h1 class="mt-5 text-primary-emphasis fs-1">Sign In</h1>
                 <div class="my-5 text-center px-5">
                     <form [formGroup]="signin" (ngSubmit)="onSubmit()">
 
@@ -18,6 +18,12 @@
                             <mat-label>Password</mat-label>
                             <input matInput type="password" placeholder="Password" formControlName="Password">
                         </mat-form-field>
+
+                        <mat-form-field class=" px-5">
+                            <mat-label>Role</mat-label>
+                            <input matInput type="text" placeholder="Role" formControlName="Role">
+                        </mat-form-field>
+                          <pre></pre>
 
                         <button class="btn btn-success" type="submit" [disabled]="!signin.valid">Login</button>
                     </form>
