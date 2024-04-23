@@ -126,9 +126,9 @@ D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\s
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ContectUs.props
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\scopedcss\bundle\ContectUs.styles.css
-D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ContectUs.csproj.CopyComplete
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ContectUs.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\refint\ContectUs.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ContectUs.pdb
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ContectUs.genruntimeconfig.cache
 D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ref\ContectUs.dll
+D:\Moinuddin\Project\Angular17\Project_app_services\ContectUs\obj\Debug\net8.0\ContectUs.csproj.Up2Date

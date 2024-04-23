@@ -128,9 +128,9 @@ D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Signup_and_signin.props
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\scopedcss\bundle\Signup_and_signin.styles.css
-D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\Signup_and_signin.csproj.CopyComplete
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\Signup_and_signin.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\refint\Signup_and_signin.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\Signup_and_signin.pdb
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\Signup_and_signin.genruntimeconfig.cache
 D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\ref\Signup_and_signin.dll
+D:\Moinuddin\Project\Angular17\Project_app_services\Signup_and_signin\obj\Debug\net8.0\Signup_a.09AA5ADC.Up2Date

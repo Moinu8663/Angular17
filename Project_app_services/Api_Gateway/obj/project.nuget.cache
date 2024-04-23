@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RV918D+iScTsMgEijYAXleQaseBafEti1cwWhNkR6N3W5TsxzudTRA4Hsogf8ZcWrQHihtCJfYXaAwAMjN2eqg==",
+  "dgSpecHash": "zutD7J3EuUVob8nHQltb+MLD8eD+DjGkmOzkXWC5Ct0CiptvS/RamlOq2aqt19Z4fvyszbP0yUlBCRGAVN9aJA==",
   "success": true,
   "projectFilePath": "D:\\Moinuddin\\Project\\Angular17\\Project_app_services\\Api_Gateway\\Api_Gateway.csproj",
   "expectedPackageFiles": [
@@ -29,11 +29,7 @@
     "C:\\Users\\moinuddinali\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\moinuddinali\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\moinuddinali\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+    "C:\\Users\\moinuddinali\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

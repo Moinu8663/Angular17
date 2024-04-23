@@ -126,9 +126,9 @@ D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\static
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Post.props
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\scopedcss\bundle\Post.styles.css
-D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\Post.csproj.CopyComplete
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\Post.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\refint\Post.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\Post.pdb
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\Post.genruntimeconfig.cache
 D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\ref\Post.dll
+D:\Moinuddin\Project\Angular17\Project_app_services\Post\obj\Debug\net8.0\Post.csproj.Up2Date

@@ -128,9 +128,9 @@ D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserAccount.props
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\scopedcss\bundle\UserAccount.styles.css
-D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\UserAccount.csproj.CopyComplete
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\UserAccount.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\refint\UserAccount.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\UserAccount.pdb
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\UserAccount.genruntimeconfig.cache
 D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\ref\UserAccount.dll
+D:\Moinuddin\Project\Angular17\Project_app_services\UserAccount\obj\Debug\net8.0\UserAcco.06BC997E.Up2Date

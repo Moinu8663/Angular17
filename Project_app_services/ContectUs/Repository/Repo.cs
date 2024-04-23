@@ -16,7 +16,7 @@ namespace ContectUs.Repository
             context.SaveChanges();
         }
 
-        List<Contect> IRepo.GetAll()
+        public List<Contect> GetAll()
         {
             return context.contects.ToList();
         }

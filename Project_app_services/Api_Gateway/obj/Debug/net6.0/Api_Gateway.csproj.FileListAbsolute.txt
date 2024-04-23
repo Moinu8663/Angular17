@@ -141,9 +141,9 @@ D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Api_Gateway.props
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\staticwebassets.pack.json
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\scopedcss\bundle\Api_Gateway.styles.css
-D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\Api_Gateway.csproj.CopyComplete
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\Api_Gateway.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\refint\Api_Gateway.dll
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\Api_Gateway.pdb
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\Api_Gateway.genruntimeconfig.cache
 D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\ref\Api_Gateway.dll
+D:\Moinuddin\Project\Angular17\Project_app_services\Api_Gateway\obj\Debug\net6.0\Api_Gate.A04CD0FD.Up2Date
